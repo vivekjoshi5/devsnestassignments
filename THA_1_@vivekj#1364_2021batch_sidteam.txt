@@ -1,0 +1,44 @@
+<html>
+  <body>
+  
+  <p>
+    PR Team<br>
+    ABC College,<br>
+    Street No: 24,<br>
+    New Delhi: 110012.<br>
+    <br>
+    May 29, 2020<br>
+    <br>
+    Vivek Joshi<br>
+    Devsnest,<br>
+    Street No: 3,<br>
+    New Delhi: 110050.<br>
+    <br>
+    Dear Sir/Ma'am,<br>
+    <br>
+    I am writing you on behalf of Devsnest team to infrom you that we are organizing a <b>30 days code camp</b> to upskill students with current tools and software technologies to develop applications using coding skills.This workshop will turn out to be very beneficial to connect students to real life scenario of working as a team and building a project. 
+    <br><br>
+    We will be conducting following activities dduring the camp:
+    <ol>
+      <li>50+ Projects.</li>
+      <li>Design Thinking Workshop.</li>
+      <li>Team Building Strategies & Scrum Processes.</li>
+      <li>Mock Interviews.</li>
+      <li>Code Gyms.</li>
+      
+    </ol>
+      
+    Kindly allow us to organise a workshop in your college coming Monday, the <b>31<sup>st</sup></b> to brief students about this event. <br>
+    Yours sincerely,<br>
+    Vivek Joshi<br>
+    <br>
+    <br>
+    Please visit our website for more information at  <a target= "_blank"
+     href= "https://devsnest.in/" >Devsnest</a>.
+    
+    <img width="500" height="300" src = "https://previews.123rf.com/images/karpenkoilia/karpenkoilia1806/karpenkoilia180600011/102988806-vector-line-web-concept-for-programming-linear-web-banner-for-coding-.jpg">
+   
+ 
+  </p>
+   </body>
+</html>  
