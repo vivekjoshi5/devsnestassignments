@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./THA9_project.css">
+    <title>Project Movie Ticketing</title>
+</head>
+<div class="screen">⬆⬆    Screen This Way   ⬆⬆</div>
+<div class= "container">
+<div class="seat" style="border-top-left-radius: 8px;"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat" style="border-top-right-radius: 8px;"> </div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat" style="border-bottom-left-radius: 8px;"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat"></div>
+<div class="seat" style="border-bottom-right-radius: 8px;"></div>
+</div>
+<h2 id="B"></h2>
+<h2 id="A"></h2>  
+<body>
+    <script>
+        var booked = 0;
+        var available = 36;
+        document.getElementById("A").innerHTML="Available Seats: "+ available;
+        document.getElementById("B").innerHTML="Booked Seats: "+ booked;
+
+        const list = document.querySelectorAll('.seat');
+        for(let i=0; i < list.length; i++){
+            list[i].addEventListener("click", function(){
+            if(list[i].className=="seat")
+            {
+              list[i].classList.remove("seat")
+              list[i].classList.add("chosen")
+              booked++
+              available--
+              document.getElementById("A").innerHTML="Available Seats: "+ available;
+              document.getElementById("B").innerHTML="Booked Seats: "+ booked;
+            }
+            else
+            {
+              list[i].classList.remove("chosen")
+              list[i].classList.add("seat")
+              booked--
+              available++
+              document.getElementById("A").innerHTML="Available Seats: "+ available;
+              document.getElementById("B").innerHTML="Booked Seats: "+ booked;
+              
+            } 
+            })
+        }
+
+    </script>
+
+
+
+</body>
+</html>
+
+
+
+<!-- 1. Make Boxes X 
+2. Apply style.X
+3. Add Hover effect to boxesX
+4. Position in the centre.X
+5. Make & style Screen. 50% left
+6. Position Screen. X
+7. Make two variables for Booked & Remaining seat. Position them. laterX
+8. Apply Event for each box when clicked, Color Change X
+ - Create function X
+ - Create a for loop to aggregate the boxes X
+ - Catch the element on click X
+ - Add a function to catched element changes which changes color: add & remove class using classList. X
+9. Apply Event for Increase/Decrease In point no. 7.X -->
