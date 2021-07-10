@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;  
+}
+
+/* Takes all selectors & sets the properties  */
+body{
+    background-image:url("https://th.bing.com/th/id/R.dc83d9f1d388f57412969127b00fc004?rik=ZrXAq8sOaHKlpw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fdH8ljb2.jpg&ehk=beq27iyZ5jRQONSZ24BHkSUpSJuMVHj6ndqTE9mgpF4%3d&risl=&pid=ImgRaw");
+}
+
+/* .box{
+    display:flex;
+    align-self:center;
+} */
+
+.container{
+    display: grid;
+    position: absolute;
+    height: 500px ;
+    width: 1000px;
+    left: 100px;
+    top: 200px;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(4,auto);
+    gap: 10px;
+}
+
+
+.tileContainer{
+    perspective: 1000px;
+}
+
+
+.inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s;
+    transform-style: preserve-3d;
+}
+
+
+.tileFront, .tileBack{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px white; 
+    position: absolute;
+}
+
+.flipped{
+    transform: rotateY(180deg);
+}
+
+
+.tileFront{
+    background-color: rgb(230, 185, 135);
+}
+
+.tileBack{
+    transform: rotateY(180deg);
+}
+
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+
+/* of scoreboard*/
+
+#score{
+    border: 2px solid rgb(230, 185, 135);;
+    background-color: rgb(197, 194, 194);
+    color: rgb(223, 111, 67);
+    height: 30px;
+    text-align:center ;
+    padding-top: 5px;
+    width: 160px;
+    border-radius: 4px;
+    position: fixed;
+    left: 500px; 
+}
+
+#rightAttempts{
+    border: 2px solid rgb(230, 185, 135);;
+    background-color: rgb(197, 194, 194);;
+    color: rgb(223, 111, 67);
+    height: 30px;
+    text-align:center ;
+    padding-top: 5px;
+    width: 160px;
+    border-radius: 4px;
+    position: fixed;
+    left: 500px; 
+    top: 100px; 
+}
+
+#wrongAttempts{
+    border: 2px solid rgb(230, 185, 135);
+    background-color: rgb(197, 194, 194);;
+    color: rgb(223, 111, 67);
+    height: 30px;
+    text-align:center ;
+    padding-top: 5px;
+    width: 160px;
+    border-radius: 4px;
+    position: fixed;
+    left: 500px;
+    top: 50px; 
+}
