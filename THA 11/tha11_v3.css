@@ -1,0 +1,30 @@
+
+
+
+body{
+    background-color:powderblue;
+}
+
+#heading{
+    color:royalblue;
+}
+
+#option{
+    color:black;
+    font-weight:bolder;
+    background-color:mediumseagreen;
+}
+
+#retry{
+    color:magenta;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box{
+    display: flex;
+    flex-flow:column;
+    align-items:center;
+}
