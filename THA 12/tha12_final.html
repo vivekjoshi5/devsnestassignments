@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tha12_final.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1 class="app-title">todos</h1>
+            <ul class="todo-list js-todo-list"></ul>
+            <div class= "empty-state">
+                <img src="./todopad.png" alt="notepad image">
+                <h2 class= "empty-state__title">Add your first todo</h2>
+                <p class= "empty-state__description">What do you want to do today ?</p>
+            </div> 
+            <form class= "todo-form js-form">
+                <input autofocus type= "text" aria-label = "Enter a new todo item" placeholder= "Eg. Toss Up Spaghetti" class= "js-todo-input">
+            </form>
+        </div>    
+        <script src="./tha12_final.js"></script>
+    </main>
+</body>
+</html>

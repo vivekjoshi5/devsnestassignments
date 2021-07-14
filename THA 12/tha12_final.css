@@ -1,0 +1,58 @@
+.container{
+    display:flex;
+    flex-flow: column;
+    align-items: center ;
+
+}
+
+.app-title{
+    color: grey;
+    font-size: 100px;
+}
+
+.empty-state{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.checklist-icon{
+    margin-bottom:20px;
+
+}
+
+.empty-state__title, .empty-state__description{
+    margin-bottom: 20px;
+}
+
+.todo-list:empty{
+    display:none;
+}
+
+.todo-list:empty + .empty-state{
+    display:flex;
+}
+
+
+img{
+    height:25%;
+    width: 25%;
+}
+
+.delete-todo.js-delete-todo{
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: lightcoral;
+}
+
+.js-todo-input{
+    font-family: Helvetica;
+}
+
+li{
+    list-style: none;
+}
