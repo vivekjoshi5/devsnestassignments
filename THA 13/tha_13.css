@@ -1,0 +1,43 @@
+body{
+    background-image: url(./stars.jpg)
+}
+
+nav{
+    position: absolute;
+    left: 480px;
+    top: 150px;
+}
+
+#holder{
+    display:flex;
+    align-content: center;
+}
+
+.mainHolder{
+    position:absolute;
+    left: 450px;
+    top: 200px;
+    right:100px;
+}
+
+#btn{
+    font-family: helvetica;
+    font-weight: bold;   
+}
+
+.imgHolder{
+    border:3px solid black;
+}
+
+img{
+    height:50%;
+    width:50%;
+}
+
+#logo{
+    position:absolute;
+    height:27   0px;
+    width:270px;
+    left:520px;
+
+}
